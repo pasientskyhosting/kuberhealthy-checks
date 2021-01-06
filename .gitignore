@@ -1,0 +1,7 @@
+.vscode
+.history/
+.idea
+.DS_Store
+.old
+vendor/
+cmd/duplicate-ingress-check/duplicate-ingress-check
