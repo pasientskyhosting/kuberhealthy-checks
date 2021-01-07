@@ -75,7 +75,7 @@ func (o Options) findDuplicateIngress() ([]string, error) {
 
 	namespace = os.Getenv("TARGET_NAMESPACE")
 	if namespace == "" {
-		log.Println("looking for pods across all namespaces, this requires a cluster role")
+		log.Println("looking for ingresses across all namespaces, this requires a cluster role")
 		// it is the same value but we are being explicit that we are listing ingresses in all namespaces
 		namespace = v1.NamespaceAll
 	} else {
